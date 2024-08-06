@@ -69,7 +69,7 @@ def predict():
     print(121212)
     data_path = request.get_json()
     print(1212)
-    model_path = "./model.pkl"
+    model_path = "model.pkl"
     results = main(data_path, model_path)
     return jsonify(results)
 
