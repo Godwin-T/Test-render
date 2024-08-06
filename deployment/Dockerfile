@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 
 VOLUME /app/models/
 
-COPY ["predict.py", "./"]
+COPY ["predict.py", "model.pkl", "./"]
 
 EXPOSE 9696
 
